@@ -9,6 +9,7 @@ function AvailableMeals() {
   useEffect(() => {
     const fetchMeals = async () => {
       setIsLoading(true);
+      //method = post , pushing the data into the database
       const response = await fetch(
         "https://react-movie-app-5b5aa-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json"
       );
